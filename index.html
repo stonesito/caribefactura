@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Paga tu factura de energía | Servicios Energía</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0072ce, #00b140); /* Aire Energía colors */
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 40px 30px;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      max-width: 420px;
+      text-align: center;
+      animation: slideUp 1.2s ease forwards;
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .card img {
+      width: 100%;
+      max-height: 355px;
+      object-fit: contain;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      animation: pulse 2.5s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+    }
+
+    .card h1 {
+      font-size: 2em;
+      color: #0072ce;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #333;
+      margin-bottom: 25px;
+      font-weight: 500;
+    }
+
+    .pagar-btn {
+      background: linear-gradient(45deg, #0072ce, #00b140);
+      color: white;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .pagar-btn:hover {
+      background: linear-gradient(45deg, #00a0e3, #00c95c);
+      transform: scale(1.05);
+    }
+
+    .pagar-btn svg {
+      width: 20px;
+      height: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="fondo-energia.png" alt="Factura de energía">
+    <h1>Paga tu factura</h1>
+    <p>Haz tu pago de forma rápida, segura y desde casa con Aire Energía.</p>
+    <a href="https://Caribesolpagos.com/Pagar?b=eyJlbmNyeXB0ZWQiOnRydWV9" class="pagar-btn">
+      Pagar ahora
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+        <path d="M13 2L3 14h9l-1 8L21 10h-9l1-8z"/>
+      </svg>
+    </a>
+  </div>
+
+</body>
+</html>
